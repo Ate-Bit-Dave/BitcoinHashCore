@@ -314,7 +314,7 @@ elif cmd == "walletpassphrasechange":
 		pwd2 = raw_input("Enter new wallet passphrase: ")
 		access.walletpassphrasechange(pwd, pwd2)
 		print
-		print "\n---Passphrase changed---\n"
+		print "\n---Passphrase changed. Write it Down!---\n"
 	except:
 		print
 		print "\n---An error occurred---\n"

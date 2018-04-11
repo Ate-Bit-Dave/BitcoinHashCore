@@ -25,9 +25,9 @@ Release Process
 ##perform gitian builds
 
  From a directory containing the bitcoinhashcore source, gitian-builder and gitian.sigs
-  
+
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
-	export VERSION=0.8.7
+	export VERSION=10.01.01.6
 	cd ./gitian-builder
 
  Fetch and build inputs: (first time, or when dependency versions change)
@@ -50,7 +50,7 @@ Release Process
 	mv build/out/qt*.zip inputs/
 
  Build bitcoinhashcored and bitcoinhashcore-qt on Linux32, Linux64, and Win32:
-  
+
 	./bin/gbuild --commit bitcoinhashcore=v${VERSION} ../bitcoinhashcore/contrib/gitian-descriptors/gitian.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../bitcoinhashcore/contrib/gitian-descriptors/gitian.yml
 	pushd build/out
@@ -119,4 +119,3 @@ Commit your signature to gitian.sigs:
 	git commit -a
 	git push  # Assuming you can push to the gitian.sigs tree
 	popd
-

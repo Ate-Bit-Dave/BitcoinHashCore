@@ -1,3 +1,19 @@
+10.01.01.6 changes 2018
+==================
+This is more of a cosmetic fix than anything. I want to see if anyone in the community
+is open to keeping this coin alive also it is a learning curve for me as I have
+not written code for many years. I am using this dead coin to learn rather than create
+another new "sh*t coin". I will add some color to the splash screen as well.
+There are small version errors throughout the code as well so I will do some house
+keeping and clean it up so if my new version is accepted I will have a clean baseline
+to continue updates.
+
+10.00.00.5 changes 2015
+==================
+Done by previous Dev. Since gone It is a mesh of Litecoin and some editing done by
+using a find and replace.... For example the document below: as if there was a v0.8.7.4
+distributed at "bitcoinhashcore.org". Unfortunately the changes where not documented.
+
 0.8.7.5 changes
 =============
 - openssl-1.0.1k or older versions patched for CVE-2014-8275 broke compatibility with Bitcoin and BitcoinHasHCore.
@@ -41,7 +57,7 @@
   - Fix custom build on MacOS X 10.9
   - Fix QT5 custom build
   - Update Debian build instructions
-  - Update Homebrew build 
+  - Update Homebrew build
 
 0.8.6.1 changes
 =============
@@ -87,8 +103,8 @@ patch just to match Bitcoin 0.8.5.)
 0.8.4.1 changes
 ===============
 
-CVE-2013-5700 Bloom: filter crash issue - BitcoinHasHCore 0.8.3.7 disabled bloom by default so was 
-unaffected by this issue, but we include their patches anyway just in case folks want to 
+CVE-2013-5700 Bloom: filter crash issue - BitcoinHasHCore 0.8.3.7 disabled bloom by default so was
+unaffected by this issue, but we include their patches anyway just in case folks want to
 enable bloomfilter=1.
 
 CVE-2013-4165: RPC password timing guess vulnerability
@@ -97,11 +113,11 @@ CVE-2013-4627: Better fix for the fill-memory-with-orphaned-tx attack
 
 Fix multi-block reorg transaction resurrection.
 
-Fix non-standard disconnected transactions causing mempool orphans.  This bug could cause 
-nodes running with the -debug flag to crash, although it was lot less likely on BitcoinHasHCore 
+Fix non-standard disconnected transactions causing mempool orphans.  This bug could cause
+nodes running with the -debug flag to crash, although it was lot less likely on BitcoinHasHCore
 as we disabled IsDust() in 0.8.3.x.
 
-Mac OSX: use 'FD_FULLSYNC' with LevelDB, which will (hopefully!) prevent the database 
+Mac OSX: use 'FD_FULLSYNC' with LevelDB, which will (hopefully!) prevent the database
 corruption issues have experienced on OSX.
 
 Add height parameter to getnetworkhashps.

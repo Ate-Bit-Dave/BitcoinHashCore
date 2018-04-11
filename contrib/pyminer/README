@@ -1,6 +1,8 @@
 
-This is a 'getwork' CPU mining client for bitcoin.
+This is a 'getwork' CPU mining client for BitcoinhashCore.
 
 It is pure-python, and therefore very, very slow.  The purpose is to
 provide a reference implementation of a miner, for study.
 
+Edit 2018. As a Side note I since this code has been changed from Litecoin
+It will be useless.
